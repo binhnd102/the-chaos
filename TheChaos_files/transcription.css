@@ -1,0 +1,165 @@
+hr {
+	margin: 1em 0 0.7em;
+}
+
+.transcription_options {
+	font-size: small;
+	white-space: nowrap;
+}
+
+#transcr_output {
+	padding: 1em 0;
+	font-family: Helvetica, Gadget, sans-serif;
+}
+
+#transcr_parallel_output td {
+	padding: 0 0.5em;
+	font-weight: inherit;
+}
+
+#transcr_parallel_output .orig {
+	color: gray;
+}
+
+.nontranscriptable {
+	font-weight: bold;
+	color: gray;
+}
+
+.transcription_missing {
+	color: red;
+}
+
+.transcribed_word {
+	white-space: nowrap;
+}
+
+.tooltip-inner {
+	text-align: left;
+}
+
+.clear_both {
+	clear: both;
+	height: 0;
+}
+
+.inline_unit {
+	float: left;
+	/* margin: 0 0 0.5em 0; */
+	height: 3.1em;
+}
+
+.inline_orig {
+	color: gray;
+	height: 1.1em;
+}
+
+.fullwidth {
+	width: 100%;
+}
+
+/* Transcription */
+
+.brackets {
+	width:150px;
+}
+
+.brackets input[type="text"] {
+	width: 0.6em;
+}
+
+#preBracket {
+	text-align: right;
+}
+
+/* App Store badge */
+.badge_wrapper {
+	float: right;
+	margin-left: 1.625em;
+}
+
+.badge {
+    padding: 5px 10px 0 0;
+    text-align: right;
+}
+
+.transcribe_btn_gap {
+    margin-top: 1.4em;
+}
+
+.transcribe_btn_gap_ru {
+    margin-top: 2.9em;
+}
+
+@media (max-width: 730px) {
+    .badge {
+        padding: 5px 0 0 0;
+        text-align: left;
+    }
+    
+    .transcribe_btn_gap, .transcribe_btn_gap_ru {
+        margin-top: 1em;
+    }
+}
+
+#text_to_transcribe {
+    width: 100%;
+}
+
+textarea:invalid + input[type="button"] {
+    display: none;
+}
+
+#clear_button
+{
+    background-image: url('/wp-content/plugins/transcription/clear.png');
+    background-position: top right;
+    background-repeat: no-repeat;
+    height: 1.4rem;
+    width: 1.4rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    top: .2rem;
+    right: .9rem;
+}
+
+#adsense_container_1 {
+	text-align: center;
+}
+
+#adsense_container_2 {
+	margin: 0 auto;
+}
+
+#transcr_social {
+	margin: 0;
+}
+#transcr_social li {
+	list-style: none;
+	float: left;
+	padding: 0 12px 6px 0;
+}
+#transcr_social #vk {
+	width: 167px;
+}
+#transcr_social #fb {
+	width: 150px;
+}
+#transcr_social #twit {
+	width: 115px;
+}
+#transcr_social #g {
+	width: 100px;
+}
+
+/* fix fo FB button alignment  */
+.fb-like span {
+    vertical-align: top !important;
+}
+
+/* fix double-arrows in bootstrap dropdowns */
+.custom-select{
+	background-image: none;
+}

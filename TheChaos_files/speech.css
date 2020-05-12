@@ -1,0 +1,96 @@
+#speech_controls {
+    margin-top: 1rem;
+}
+
+#speech_controls .col-auto {
+    margin-top: 0.5rem;
+}
+
+.speech_button {
+    position: relative;
+    display: inline-block;
+    width: 3.35rem;
+}
+
+.speech_button:hover {
+    background: linear-gradient(#b9b9b9, #898989), #898589 ;
+}
+
+.speech_button:before, .speech_button:after {
+    position: absolute;
+    content: " ";
+}
+
+.speech_button:active {
+    top: 0.175em;
+    box-shadow: 0 .07em .273em rgba(0,0,0,.4);
+}
+
+/* Stop */
+.stop:before {
+    top: .53em;
+    left: 1em;
+    width: 1.2em;
+    height: 1.2em;
+    background: rgb(255, 255, 255);
+}
+
+.stop:hover:before {
+    background: darken(rgb(255, 255, 255), 25%);
+}
+
+/* Pause */
+.pause:before, .pause:after {
+    top: .53em;
+    left: 1em;
+    width: 0.55em;
+    height: 1.2em;
+    display: block;
+    background-color: rgb(255, 255, 255);
+}
+
+.pause:after {
+    left: 1.8em;
+}
+
+.pause:hover:before, .pause:hover:after {
+    background-color: darken(rgb(255, 255, 255), 25%);
+}
+
+/* Play */
+.play:before {
+    z-index: 2;
+    top: .45em;
+    left: 1em;
+    width: 0;
+    height: 0;
+    border: .7em solid transparent;
+    border-left-color: rgb(255, 255, 255);
+    border-left-width: 1.3em;
+}
+.play:hover:before {
+    border-left-color: darken(rgb(255, 255, 255), 25%);
+}
+
+.speaking {
+    background: linear-gradient(#7e7, #3b3), #39b539;
+}
+.speaking:hover {
+    background: linear-gradient(#9f9, #5c5), #59c559;
+}
+
+.slider {
+	display: inline-block;
+	white-space: nowrap;
+    margin: 0.5em 0;
+}
+.slider input[type="range"] {
+    width: 12em;
+    vertical-align: middle;
+    margin: 0 0.5rem;
+}
+
+#speech_controls img {
+    width: 1.5em;
+    vertical-align: middle;
+}
